@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  /* colors */
+  --colorWord: black;
+  --colorClassActivo: gray;
+  --colorWordInfo: white;
+  --colorBlueBtnInfo: #26ade4;
+  --colorBlueBackgoundInfo: #4dbce9;
+}
+.wrap-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.wrap-logo {
+  margin: 5px 0 0 20px;
+}
+.logo {
+  width: 200px;
+}
+.wrap-item-nav {
+  width: 900px;
+  display: flex;
+  list-style: none;
+  margin-right: 40px;
+  justify-content: space-between;
+}
+.item-nav {
+  font-size: 2.5em;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--colorWord);
+}
+.item-nav::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: 1s ease;
+}
+.item-nav:hover::after {
+  width: 100%;
+}
+.activo {
+  color: var(--colorClassActivo);
+}
+/* --------------------------------------- */
+.section-card {
+  height: 80vh;
+  display: grid;
+  align-items: center;
+  background-color: var(--colorBlueBackgoundInfo);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23000000' fill-opacity='0.27'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+.wrap-cards {
+  height: 70vh;
+  width: 40vw;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 40px;
+  column-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card {
+  border-radius: 8px;
+  background-color: white;
+}
+.wrap-card-img {
+  margin: 5px auto 10px;
+  width: 100px;
+  height: 100px;
+}
+.card-img {
+  width: 100px;
+}
+.card-tittle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wrap-btn {
+  text-align: center;
+}
+.card-btn {
+  color: var(--colorWordInfo);
+  padding: 15px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  background-color: var(--colorBlueBtnInfo);
+}
+/* --------------------------------------- */
+.footer {
+  padding-top: 40px;
+  height: 100vh;
+}
+.wrap-footer {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+}
+.footer-tittle {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 140px;
+  color: var(--colorBlueBackgoundInfo);
+}
+.wrap-cards-footer {
+  width: 70vw;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.card-footer i {
+  display: block;
+  color: var(--colorBlueBackgoundInfo);
+  font-size: 150px;
+  text-align: center;
+}
+.item-footer {
+  text-decoration: none;
+}
